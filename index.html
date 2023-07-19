@@ -1,0 +1,719 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/newicon.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>LlandMsindas</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script nonce="84a158de-7f77-47a8-9f18-5359bd63bec1">(function (w, d) { !function (bg, bh, bi, bj) { bg[bi] = bg[bi] || {}; bg[bi].executed = []; bg.zaraz = { deferred: [], listeners: [] }; bg.zaraz.q = []; bg.zaraz._f = function (bk) { return function () { var bl = Array.prototype.slice.call(arguments); bg.zaraz.q.push({ m: bk, a: bl }) } }; for (const bm of ["track", "set", "debug"]) bg.zaraz[bm] = bg.zaraz._f(bm); bg.zaraz.init = () => { var bn = bh.getElementsByTagName(bj)[0], bo = bh.createElement(bj), bp = bh.getElementsByTagName("title")[0]; bp && (bg[bi].t = bh.getElementsByTagName("title")[0].text); bg[bi].x = Math.random(); bg[bi].w = bg.screen.width; bg[bi].h = bg.screen.height; bg[bi].j = bg.innerHeight; bg[bi].e = bg.innerWidth; bg[bi].l = bg.location.href; bg[bi].r = bh.referrer; bg[bi].k = bg.screen.colorDepth; bg[bi].n = bh.characterSet; bg[bi].o = (new Date).getTimezoneOffset(); if (bg.dataLayer) for (const bt of Object.entries(Object.entries(dataLayer).reduce(((bu, bv) => ({ ...bu[1], ...bv[1] })), {}))) zaraz.set(bt[0], bt[1], { scope: "page" }); bg[bi].q = []; for (; bg.zaraz.q.length;) { const bw = bg.zaraz.q.shift(); bg[bi].q.push(bw) } bo.defer = !0; for (const bx of [localStorage, sessionStorage]) Object.keys(bx || {}).filter((bz => bz.startsWith("_zaraz_"))).forEach((by => { try { bg[bi]["z_" + by.slice(7)] = JSON.parse(bx.getItem(by)) } catch{ bg[bi]["z_" + by.slice(7)] = bx.getItem(by) } })); bo.referrerPolicy = "origin"; bo.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(bg[bi]))); bn.parentNode.insertBefore(bo, bn) };["complete", "interactive"].includes(bh.readyState) ? zaraz.init() : bg.addEventListener("DOMContentLoaded", zaraz.init) }(w, d, "zarazData", "script"); })(window, document);</script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" style="color: white;">LlandMsindas Enterprise</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="ri-menu-line"></i> Menu
+            </button>
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                    <!--<li class="nav-item active"><a href="index.html" class="nav-link" style="color: white;">Home</a></li>-->
+                    <li class="nav-item"><a href="about.html" class="nav-link" style="color: white;">About</a></li>
+                   <!-- <li class="nav-item"><a href="speakers.html" class="nav-link">Speakers</a></li>--> 
+                    <li class="nav-item"><a href="schedule.html" class="nav-link" style="color: white;">Book Now</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link" style="color: white;">Services</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link" style="color: white;">Contact</a></li>
+                    <li class="nav-item cta mr-md-2"><a href="schedule.html" class="nav-link" style="background: #0B6623; border-color: #0B6623;">Book now</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="hero-wrap" style="background-image: url('images/HOME.jpg');" data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
+                <div class="col-lg-6 col-md-6 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+                    <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }" style="color: white;"> LlandMsindas <br><span style="color: #734d26;">Your next appointment</span></h1>
+                    <p class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }" style="color: #734d26;"><i class="ri-time-line"></i>waiting time:</p>
+                    <div id="timer" class="d-flex">
+                        <div class="time" id="days" style="color: #734d26;"></div>
+                        <div class="time pl-3" id="hours" style="color: #734d26;"></div>
+                        <div class="time pl-3" id="minutes" style="color: #734d26;"></div>
+                        <div class="time pl-3" id="seconds" style="color: #734d26;"></div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col"></div>
+                <div class="col-lg-4 col-md-6 mt-0 mt-md-5">
+                    <form action="#" class="request-form ftco-animate">
+                        <h2>Book Now</h2>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Enter your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Enter your Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Enter your Phone">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Enter your address">
+                        </div>
+                        <div class="form-group">
+                            <a href="#" style="color: #734d26;">Terms and Conditions</a>
+                        </div>
+                        <div class="form-group">
+                            <div class="checkbox">
+                                <label><input type="checkbox" value="" class="mr-2"> I have read and accept the terms and conditions</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Join now" class="btn btn-primary py-3 px-4">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="ftco-section services-section bg-primary">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate" >
+                    <div class="media block-6 services d-block">
+                        <div class="icon"><i class="ri-road-map-line"></i></div>
+                        <div class="media-body">
+                            <h3 class="heading mb-3">Venue</h3>
+                            <p> 43 Soho Lofts Rosewood Road Broadacres</br>Fourways</br>2021</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services d-block">
+                        <div class="icon"><i class="ri-car-line"></i></div>
+                        <div class="media-body">
+                            <h3 class="heading mb-3">Transport</h3>
+                            <p>We will quickly reach your location</p>
+                        </div>
+                    </div>
+                </div>
+            <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services d-block">
+                        <div class="icon"><i class="ri-phone-line"></i></div>
+                        <div class="media-body">
+                            <h3 class="heading mb-3">Contact Us</h3>
+                            <p>Whatsapp: 071 146 1313 </br>
+                               Calls: 067 693 2463 </br>
+                               llandmsindasenterprise@gmail.com  </br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services d-block">
+                        <div class="icon"><i class="ri-focus-3-line"></i></div>
+                        <div class="media-body">
+                            <h3 class="heading mb-3">Our Focus:</h3>
+                            <p>
+                                Domestic and commercial, electrical work.</br>
+                                All kinds of solar systems icluding solar systems.</br>
+                                Electric fence and alarm systems.</br>
+                                We do COCs</br>
+                                We do plumbing</br>
+                                Gas installation and certify</br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ftco-section ftco-no-pt ftco-no-pb">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/EF.jpg);">
+                </div>
+                <div class="col-md-7 wrap-about py-md-5 ftco-animate">
+                    <div class="heading-section mb-5 pt-5 pl-md-5">
+                        <div class="pr-md-5 mr-md-5">
+                            <h2 class="mb-4">What is all about us?</h2>
+                        </div>
+                        <p>
+                            LlandMsindas is a highly reputable company that has established itself as a leader in the industry. With a strong focus on customer satisfaction, we provide comprehensive domestic and commercial services tailored to your specific needs. Our expertise extends to commercial solar systems, offering efficient and sustainable solutions to power your business.
+                             We are also proficient in the installation of electric fences and alarm systems, ensuring the safety and security of your property.</p>
+                        <p>Additionally, we specialize in certificate of compliance services, ensuring that all necessary regulations and standards are met.
+                             Our team of skilled professionals is well-versed in plumbing and gas installations, providing reliable solutions for both residential and commercial projects. We take pride in our ability to deliver exceptional results, utilizing the latest techniques and technologies.</p>
+                             <p>At LlandMsindas, our commitment to excellence drives us to exceed expectations. We strive to provide efficient, reliable, and cost-effective services, always adhering to the highest industry standards.
+                                 Trust us for all your domestic and commercial needs, and experience the difference of working with a company that truly cares about your satisfaction.</p>
+                        <p><a href="#" class="btn btn-primary">Book now</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--<section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-7 text-center heading-section ftco-animate">
+                    <h2 class="mb-3">Conference Schedule</h2>
+                </div>
+            </div>
+            <div class="ftco-schedule">
+                <div class="row">
+                    <div class="col-md-3 nav-link-wrap text-center text-md-right">
+                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <a class="nav-link ftco-animate active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">First Day <span>21 July 2019</span></a>
+                            <a class="nav-link ftco-animate" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false">Second Day <span>22 July 2019</span></a>
+                            <a class="nav-link ftco-animate" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab" aria-controls="v-pills-3" aria-selected="false">Third Day <span>23 July 2019</span></a>
+                        </div>
+                    </div>
+                    <div class="col-md-9 tab-wrap">
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="day-1-tab">
+                                <div class="speaker-wrap ftco-animate d-md-flex">
+                                    <div class="img speaker-img" style="background-image: url(https://preview.colorlib.com/theme/plataforma/images/staff-1.jpg.webp);"></div>
+                                    <div class="text">
+                                        <h2><a href="#">Introduction to Business Leaders</a></h2>
+                                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                                        <span class="time">09:00 am - 4:30 pm</span>
+                                        <p class="location"><span class="icon-map-o mr-2"></span>20 July 2019 - Hall, Building Los Angeles CA</p>
+                                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                                        <h3 class="speaker-name">&mdash; <a href="#">Ryan Thompson</a> <span class="position">Founder of Wordpress</span></h3>
+                                    </div>
+                                </div>
+                                <div class="speaker-wrap ftco-animate d-md-flex">
+                                    <div class="img speaker-img" style="background-image: url(https://preview.colorlib.com/theme/plataforma/images/staff-2.jpg.webp);"></div>
+                                    <div class="text">
+                                        <h2><a href="#">Introduction to Business Leaders</a></h2>
+                                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                                        <span class="time">09:00 am - 4:30 pm</span>
+                                        <p class="location"><span class="icon-map-o mr-2"></span>20 July 2019 - Hall, Building Los Angeles CA</p>
+                                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                                        <h3 class="speaker-name">&mdash; <a href="#">Ryan Thompson</a> <span class="position">Founder of Wordpress</span></h3>
+                                    </div>
+                                </div>
+                                <div class="speaker-wrap ftco-animate d-md-flex">
+                                    <div class="img speaker-img" style="background-image: url(https://preview.colorlib.com/theme/plataforma/images/staff-3.jpg.webp);"></div>
+                                    <div class="text">
+                                        <h2><a href="#">Introduction to Business Leaders</a></h2>
+                                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                                        <span class="time">09:00 am - 4:30 pm</span>
+                                        <p class="location"><span class="icon-map-o mr-2"></span>20 July 2019 - Hall, Building Los Angeles CA</p>
+                                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                                        <h3 class="speaker-name">&mdash; <a href="#">Ryan Thompson</a> <span class="position">Founder of Wordpress</span></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-day-2-tab">
+                                <div class="speaker-wrap ftco-animate d-md-flex">
+                                    <div class="img speaker-img" style="background-image: url(https://preview.colorlib.com/theme/plataforma/images/staff-4.jpg.webp);"></div>
+                                    <div class="text">
+                                        <h2><a href="#">Introduction to Business Leaders</a></h2>
+                                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                                        <span class="time">09:00 am - 4:30 pm</span>
+                                        <p class="location"><span class="icon-map-o mr-2"></span>20 July 2019 - Hall, Building Los Angeles CA</p>
+                                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                                        <h3 class="speaker-name">&mdash; <a href="#">Ryan Thompson</a> <span class="position">Founder of Wordpress</span></h3>
+                                    </div>
+                                </div>
+                                <div class="speaker-wrap ftco-animate d-md-flex">
+                                    <div class="img speaker-img" style="background-image: url(images/staff-1.jpg);"></div>
+                                    <div class="text">
+                                        <h2><a href="#">Introduction to Business Leaders</a></h2>
+                                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                                        <span class="time">09:00 am - 4:30 pm</span>
+                                        <p class="location"><span class="icon-map-o mr-2"></span>20 July 2019 - Hall, Building Los Angeles CA</p>
+                                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                                        <h3 class="speaker-name">&mdash; <a href="#">Ryan Thompson</a> <span class="position">Founder of Wordpress</span></h3>
+                                    </div>
+                                </div>
+                                <div class="speaker-wrap ftco-animate d-md-flex">
+                                    <div class="img speaker-img" style="background-image: url(images/staff-2.jpg);"></div>
+                                    <div class="text">
+                                        <h2><a href="#">Introduction to Business Leaders</a></h2>
+                                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                                        <span class="time">09:00 am - 4:30 pm</span>
+                                        <p class="location"><span class="icon-map-o mr-2"></span>20 July 2019 - Hall, Building Los Angeles CA</p>
+                                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                                        <h3 class="speaker-name">&mdash; <a href="#">Ryan Thompson</a> <span class="position">Founder of Wordpress</span></h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-day-3-tab">
+                                <div class="speaker-wrap ftco-animate d-md-flex">
+                                    <div class="img speaker-img" style="background-image: url(images/staff-3.jpg);"></div>
+                                    <div class="text">
+                                        <h2><a href="#">Introduction to Business Leaders</a></h2>
+                                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                                        <span class="time">09:00 am - 4:30 pm</span>
+                                        <p class="location"><span class="icon-map-o mr-2"></span>20 July 2019 - Hall, Building Los Angeles CA</p>
+                                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                                        <h3 class="speaker-name">&mdash; <a href="#">Ryan Thompson</a> <span class="position">Founder of Wordpress</span></h3>
+                                    </div>
+                                </div>
+                                <div class="speaker-wrap ftco-animate d-md-flex">
+                                    <div class="img speaker-img" style="background-image: url(images/staff-4.jpg);"></div>
+                                    <div class="text">
+                                        <h2><a href="#">Introduction to Business Leaders</a></h2>
+                                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                                        <span class="time">09:00 am - 4:30 pm</span>
+                                        <p class="location"><span class="icon-map-o mr-2"></span>20 July 2019 - Hall, Building Los Angeles CA</p>
+                                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                                        <h3 class="speaker-name">&mdash; <a href="#">Ryan Thompson</a> <span class="position">Founder of Wordpress</span></h3>
+                                    </div>
+                                </div>
+                                <div class="speaker-wrap ftco-animate d-md-flex">
+                                    <div class="img speaker-img" style="background-image: url(images/staff-1.jpg);"></div>
+                                    <div class="text">
+                                        <h2><a href="#">Introduction to Business Leaders</a></h2>
+                                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                                        <span class="time">09:00 am - 4:30 pm</span>
+                                        <p class="location"><span class="icon-map-o mr-2"></span>20 July 2019 - Hall, Building Los Angeles CA</p>
+                                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                                        <h3 class="speaker-name">&mdash; <a href="#">Ryan Thompson</a> <span class="position">Founder of Wordpress</span></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+   <!-- <section class="ftco-section ftco-gallery ftco-no-pt">
+        <div class="container-fluid px-4">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-7 text-center heading-section ftco-animate">
+                    <h2 class="mb-3">Conference Gallery</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 ftco-animate">
+                    <a href="images/image_1.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/image_1.jpg);">
+                        <div class="icon mb-4 d-flex align-items-center justify-content-center">
+                            <span class="icon-instagram"></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 ftco-animate">
+                    <a href="images/image_2.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/image_2.jpg);">
+                        <div class="icon mb-4 d-flex align-items-center justify-content-center">
+                            <span class="icon-instagram"></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 ftco-animate">
+                    <a href="images/image_3.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/image_3.jpg);">
+                        <div class="icon mb-4 d-flex align-items-center justify-content-center">
+                            <span class="icon-instagram"></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 ftco-animate">
+                    <a href="images/image_4.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/image_4.jpg);">
+                        <div class="icon mb-4 d-flex align-items-center justify-content-center">
+                            <span class="icon-instagram"></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>-->
+    <section class="ftco-section testimony-section ftco-no-pt">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-7 text-center heading-section ftco-animate">
+                    <h2 class="mb-3">Meet the Team</h2>
+                </div>
+            </div>
+            <div class="row ftco-animate">
+                <div class="col-md-12">
+                    <div class="carousel-testimony owl-carousel ftco-owl">
+                      <!--  <div class="item">
+                            <div class="testimony-wrap text-center py-4 pb-5">
+                                <div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
+                                </div>
+                                <div class="text pt-4">
+                                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                    <p class="name">Mthokozisi Masinda</p>
+                                    <span class="position">Founder</span>
+                                </div>
+                            </div>
+                        </div>-->
+                        <div class="item">
+                            <div class="testimony-wrap text-center py-4 pb-5">
+                                <div class="user-img mb-4" style="background-image: url(images/person_2.jpg)">
+                                </div>
+                                <div class="text pt-4">
+                                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                    <p class="name">Mthokozisi Masinda</p>
+                                    <span class="position">Founder</span>
+                                </div>
+                            </div>
+                        </div>
+                      <!--  <div class="item">
+                            <div class="testimony-wrap text-center py-4 pb-5">
+                                <div class="user-img mb-4" style="background-image: url(images/person_3.jpg)">
+                                </div>
+                                <div class="text pt-4">
+                                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                    <p class="name">Mthokozisi Masinda</p>
+                                    <span class="position">Founder</span>
+                                </div>
+                            </div>
+                        </div>-->
+                       <!-- <div class="item">
+                            <div class="testimony-wrap text-center py-4 pb-5">
+                                <div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
+                                </div>
+                                <div class="text pt-4">
+                                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                    <p class="name">Mthokozisi Masinda</p>
+                                    <span class="position">Founder</span>
+                                </div>
+                            </div>
+                        </div>-->
+                      <!--  <div class="item">
+                            <div class="testimony-wrap text-center py-4 pb-5">
+                                <div class="user-img mb-4" style="background-image: url(images/person_1.jpg)">
+                                </div>
+                                <div class="text pt-4">
+                                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                                    <p class="name">Mthokozisi Masinda</p>
+                                    <span class="position">Founder</span>
+                                </div>
+                            </div>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  <!--  <section class="ftco-section ftco-no-pt">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-7 heading-section ftco-animate text-center">
+                    <h2 class="mb-4">Conference Ticket Pricing</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 ftco-animate">
+                    <div class="block-7">
+                        <div class="text-center">
+                            <h2 class="heading">Personal</h2>
+                            <span class="price"><sup>$</sup> <span class="number">85</span></span>
+                            <span class="excerpt d-block">per month</span>
+                            <h3 class="heading-2 my-4">Enjoy All The Features</h3>
+                            <ul class="pricing-text">
+                                <li>Conference Seats</li>
+                                <li>Free Wifi</li>
+                                <li>Coffee Breaks</li>
+                                <li>Lunch</li>
+                                <li>Workshops</li>
+                                <li>One Speakers</li>
+                                <li>Papers</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary d-block px-2 py-3">Buy Ticket</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ftco-animate">
+                    <div class="block-7 active">
+                        <div class="text-center">
+                            <h2 class="heading">Small Team</h2>
+                            <span class="price"><sup>$</sup> <span class="number">200</span></span>
+                            <span class="excerpt d-block">per month</span>
+                            <h3 class="heading-2 my-4">Enjoy All The Features</h3>
+                            <ul class="pricing-text">
+                                <li>Conference Seats</li>
+                                <li>Free Wifi</li>
+                                <li>Coffee Breaks</li>
+                                <li>Lunch</li>
+                                <li>Workshops</li>
+                                <li>One Speakers</li>
+                                <li>Papers</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary d-block px-2 py-3">Buy Ticket</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ftco-animate">
+                    <div class="block-7">
+                        <div class="text-center">
+                            <h2 class="heading">Family Pack</h2>
+                            <span class="price"><sup>$</sup> <span class="number">499</span></span>
+                            <span class="excerpt d-block">per month</span>
+                            <h3 class="heading-2 my-4">Enjoy All The Features</h3>
+                            <ul class="pricing-text">
+                                <li>Conference Seats</li>
+                                <li>Free Wifi</li>
+                                <li>Coffee Breaks</li>
+                                <li>Lunch</li>
+                                <li>Workshops</li>
+                                <li>One Speakers</li>
+                                <li>Papers</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary d-block px-2 py-3">Buy Ticket</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ftco-section ftco-no-pt ftco-no-pb">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-7 text-center heading-section ftco-animate">
+                    <h2 class="mb-1">Conference Speakers</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 d-flex align-items-stretch">
+                    <div class="speaker ftco-animate d-flex align-items-stretch">
+                        <div class="img" style="background-image: url(images/staff-3.jpg);">
+                            <div class="text text-absolute">
+                                <h3>Robert Bonner</h3>
+                                <span class="position">Businessmen</span>
+                                <ul class="ftco-social mt-3">
+                                    <li><a href="#"><span class="icon-twitter"></span></a></li>
+                                    <li><a href="#"><span class="icon-facebook"></span></a></li>
+                                    <li><a href="#"><span class="icon-instagram"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="speaker ftco-animate speaker-1 d-flex align-items-center mb-5">
+                        <div class="img" style="background-image: url(images/staff-1.jpg);"></div>
+                        <div class="text pl-4">
+                            <h3>Kyle Bochs</h3>
+                            <span class="position">Businessman</span>
+                            <p>A small river named Duden flows by their place and supplies</p>
+                            <ul class="ftco-social">
+                                <li><a href="#"><span class="icon-twitter"></span></a></li>
+                                <li><a href="#"><span class="icon-facebook"></span></a></li>
+                                <li><a href="#"><span class="icon-instagram"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="speaker ftco-animate speaker-1 d-flex align-items-center mb-5">
+                        <div class="img" style="background-image: url(images/staff-2.jpg);"></div>
+                        <div class="text pl-4">
+                            <h3>Arnold Thompson</h3>
+                            <span class="position">Businessman</span>
+                            <p>A small river named Duden flows by their place and supplies</p>
+                            <ul class="ftco-social">
+                                <li><a href="#"><span class="icon-twitter"></span></a></li>
+                                <li><a href="#"><span class="icon-facebook"></span></a></li>
+                                <li><a href="#"><span class="icon-instagram"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="speaker ftco-animate speaker-1 d-flex align-items-center mb-5">
+                        <div class="img" style="background-image: url(images/staff-3.jpg);"></div>
+                        <div class="text pl-4">
+                            <h3>Ryan Sy</h3>
+                            <span class="position">Businessman</span>
+                            <p>A small river named Duden flows by their place and supplies</p>
+                            <ul class="ftco-social">
+                                <li><a href="#"><span class="icon-twitter"></span></a></li>
+                                <li><a href="#"><span class="icon-facebook"></span></a></li>
+                                <li><a href="#"><span class="icon-instagram"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="speaker ftco-animate speaker-1 d-flex align-items-center mb-5">
+                        <div class="img" style="background-image: url(images/staff-4.jpg);"></div>
+                        <div class="text pl-4">
+                            <h3>Alysa Derick</h3>
+                            <span class="position">Businesswoman</span>
+                            <p>A small river named Duden flows by their place and supplies</p>
+                            <ul class="ftco-social">
+                                <li><a href="#"><span class="icon-twitter"></span></a></li>
+                                <li><a href="#"><span class="icon-facebook"></span></a></li>
+                                <li><a href="#"><span class="icon-instagram"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-7 heading-section text-center ftco-animate">
+                    <h2>Recent Blog</h2>
+                </div>
+            </div>
+            <div class="row d-flex">
+                <div class="col-md-4 d-flex ftco-animate">
+                    <div class="blog-entry justify-content-end">
+                        <a href="blog-single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
+                        </a>
+                        <div class="text pt-4">
+                            <div class="meta mb-3">
+                                <div><a href="#">July. 14, 2019</a></div>
+                                <div><a href="#">Admin</a></div>
+                                <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+                            </div>
+                            <h3 class="heading mt-2"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex ftco-animate">
+                    <div class="blog-entry justify-content-end">
+                        <a href="blog-single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
+                        </a>
+                        <div class="text pt-4">
+                            <div class="meta mb-3">
+                                <div><a href="#">July. 14, 2019</a></div>
+                                <div><a href="#">Admin</a></div>
+                                <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+                            </div>
+                            <h3 class="heading mt-2"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex ftco-animate">
+                    <div class="blog-entry">
+                        <a href="blog-single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
+                        </a>
+                        <div class="text pt-4">
+                            <div class="meta mb-3">
+                                <div><a href="#">July. 14, 2019</a></div>
+                                <div><a href="#">Admin</a></div>
+                                <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+                            </div>
+                            <h3 class="heading mt-2"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ftco-section-parallax ftco-section ftco-no-pt">
+        <div class="parallax-img d-flex align-items-center">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-10 col-lg-7 text-center heading-section ftco-animate">
+                        <h2>Subcribe to our Newsletter</h2>
+                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+                        <div class="row d-flex justify-content-center mt-4 mb-4">
+                            <div class="col-md-8">
+                                <form action="#" class="subscribe-form">
+                                    <div class="form-group d-flex">
+                                        <input type="text" class="form-control" placeholder="Enter email address">
+                                        <input type="submit" value="Subscribe" class="submit px-3">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">LlandMsindas</h2>
+                        <p>#######</p>
+                        <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                            <li class="ftco-animate"><a href="#"><span><i class="ri-twitter-line"></i></span></a></li>
+                            <li class="ftco-animate"><a href="#"><span><i class="ri-facebook-line"></i></span></a></li>
+                            <li class="ftco-animate"><a href="#"><span><i class="ri-instagram-line"></i></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4 ml-md-5">
+                        <h2 class="ftco-heading-2">Useful Links</h2>
+                        <ul class="list-unstyled">
+                           <li><a href="about.html" class="py-2 d-block">About Us</a></li>
+                            <li><a href="schedule.html" class="py-2 d-block">Book Now</a></li>
+                            <li><a href="contact.html" class="py-2 d-block">Contact</a></li> 
+                            <li><a href="blog.html" class="py-2 d-block">Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Other Links</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="py-2 d-block">Career</a></li>
+                            <li><a href="#" class="py-2 d-block">Terms and Conditions</a></li>
+                            <li><a href="#" class="py-2 d-block">Why Us?</a></li>
+                            <!--<li><a href="#" class="py-2 d-block">Services</a></li>-->
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Have any Questions?</h2>
+                        <div class="block-23 mb-3">
+                            <ul>
+                                <ul>
+                                    <li><a href="https://www.google.co.za/maps/dir//Soho+Lofts,+34+San+Henrique+Estate,+Rosewood+Street,+Broadacres,+Broadacres+Park,+Sandton,+2021/@-25.9964048,27.9848482,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x1e9577936d041209:0x7b224ac6b974e299!2m2!1d27.9874231!2d-25.9964096?entry=ttu"><i class="ri-map-2-line">&nbsp&nbsp&nbsp&nbsp</i><span class="text">43 Soho Lofts Rosewood Road Broadacres</br>Fourways</br>2021</span></a></li>
+                                    <li><a href="tel:+27711451313"><i class="ri-whatsapp-line">&nbsp&nbsp&nbsp&nbsp</i><span class="text">Whatsapp: 071 145 1313</span></a></li>
+                                    <li><a href="tel:+27676932463"><i class="ri-phone-fill">&nbsp&nbsp&nbsp&nbsp</i><span class="text">Calls: 067 693 2463</span></a></li>
+                                    <li><a href="mailto:llandmsindasenterprise@gmail.com? subject=subject text" subject=subject text><i class="ri-mail-line">&nbsp&nbsp&nbsp&nbsp</i><span class="text"><span class="__cf_email__" data-cfemail="91f8fff7fed1e8fee4e3f5fefcf0f8ffbff2fefc">[llandmsindasenterprise@gmail.com]</span></span></a></li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>
+                        Copyright &copy;
+                        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><!--aria-hidden="true"-->
+                        <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ri-hearts-fill" aria-hidden="true"></i> by <a href="#" target="_blank">Tshidiso and Mbuso</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" /><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="js/google-map.js"></script>
+    <script src="js/main.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+    <script>window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');</script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v2cb3a2ab87c5498db5ce7e6608cf55231689030342039" integrity="sha512-DI3rPuZDcpH/mSGyN22erN5QFnhl760f50/te7FTIYxodEF8jJnSFnfnmG/c+osmIQemvUrnBtxnMpNdzvx1/g==" data-cf-beacon='{"rayId":"7e721e10afb69cda","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.4.0","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>
